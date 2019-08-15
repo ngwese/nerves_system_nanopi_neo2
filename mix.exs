@@ -1,7 +1,7 @@
 defmodule NervesSystemNeo2.MixProject do
   use Mix.Project
 
-  @app :nerves_system_neo2
+  @app :nerves_system_nanopi_neo2
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
            |> String.trim()
@@ -72,20 +72,16 @@ defmodule NervesSystemNeo2.MixProject do
 
   defp package_files do
     [
-#      "fwup_include",
-#      "rootfs_overlay",
+      "fwup_include",
+      "rootfs_overlay",
 #      "CHANGELOG.md",
-#      "cmdline.txt",
-#      "config.txt",
-#      "fwup-revert.conf",
-#      "fwup.conf",
-#      "LICENSE",
-#      "linux-4.19.defconfig",
+      "fwup-revert.conf",
+      "fwup.conf",
+      "LICENSE",
       "mix.exs",
       "nerves_defconfig",
-#      "post-build.sh",
-#      "post-createfs.sh",
-#      "ramoops.dts",
+      "post-build.sh",
+      "post-createfs.sh",
       "README.md",
       "VERSION"
     ]
